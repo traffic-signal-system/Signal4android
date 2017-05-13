@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/commit_dialog_view"
+        android:background="@drawable/linear_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名长度为2-15个汉字！"
+            android:id="@+id/message"
+            />
+
+        <TextView
+            android:background="#444444"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/textView"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="@color/basic_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:id="@+id/ISee"/>
+
+            <TextView
+                android:background="#444444"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:id="@+id/IFail"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
