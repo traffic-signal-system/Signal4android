@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aiton.zjb.signal.activity.SearchActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:paddingRight="10dp"
+            android:id="@+id/imageViewBack"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/imageSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_home_search_normal"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/normal_edittextsize"
+            android:hint="输入要查找的节点名称"
+            android:background="@drawable/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextSearch"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageSearch"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/imageViewBack"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewAddSearch"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

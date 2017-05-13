@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".fragment.XiangWeiFragment">
+
+    <include
+        layout="@layout/xiangwei_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/xiangweiRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonTongDaoPeiZhi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="通道配置"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonPuTongXiangWei"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="普通相位"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonFangXiangPeiZhi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="方向配置"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/view_tongDaoPeiZhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTongDaoHao"
+                style="@style/checkTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="通道号：1"/>
+
+            <TextView
+                android:id="@+id/textViewZiDongShan"
+                style="@style/checkTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="自动闪：未设置"/>
+
+            <TextView
+                android:id="@+id/textViewType"
+                style="@style/checkTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="类型：其他"/>
+
+            <TextView
+                android:id="@+id/textViewGuanLianXiangWei"
+                style="@style/checkTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="关联相位：p1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_saveTongDao"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/btn_secector"
+                    android:gravity="center"
+                    android:text="保存到信号机"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/view_puTongXiangWei"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_tong_dao_pei_zhi"></include>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/view_fangXiangPeiZhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textViewFangXiang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@mipmap/ooopic"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="方向：北左"/>
+
+            <TextView
+                android:id="@+id/textViewCheDao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@mipmap/ooopic"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="车道数：1"/>
+
+            <TextView
+                android:id="@+id/tvGuanLianXiangWeiFangXiang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@mipmap/ooopic"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="关联相位：P1"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxSetFangXiang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|left"
+                android:text="设置关联相位"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonSaveFangXiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/btn_shape_selector"
+                    android:gravity="center"
+                    android:text="保存到信号机"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

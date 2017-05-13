@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imageViewCancle"
+            android:layout_toStartOf="@+id/imageViewCancle"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relaStart"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@mipmap/car_trip_friend_bubble_startpoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_edittextsize"
+                    android:hint="请输入出发地"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewStart"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView9"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/line_gray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:id="@+id/textView36"/>
+
+            <RelativeLayout
+                android:id="@+id/relaEnd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@mipmap/car_trip_friend_bubble_endpoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView17"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_edittextsize"
+                    android:hint="请输入目的地"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewEnd"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView17"
+                    android:layout_toEndOf="@+id/imageView17"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:padding="15dp"
+            android:src="@drawable/cancle_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewCancle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/routeMode"
+        android:layout_margin="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RadioButton
+            android:textColor="@color/white"
+            android:checked="true"
+            android:background="@drawable/radio_selector"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="时间最短"
+            android:id="@+id/radioButtonTime"/>
+
+        <RadioButton
+            android:textColor="@color/white"
+            android:background="@drawable/radio_selector"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="路径最短"
+            android:id="@+id/radioButtonDistance"/>
+    </RadioGroup>
+
+</RelativeLayout>

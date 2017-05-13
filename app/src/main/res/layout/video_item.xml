@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="名称"
+            android:id="@+id/textViewVideoName"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="IP"
+            android:id="@+id/textViewVideoIP"/>
+
+        <ImageView
+            android:padding="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_ticket_count_minus_normal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/imageViewVideoDelete"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:context="com.aiton.zjb.signal.activity.PhaseActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/viewpagerShiJI"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout5">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout5">
+
+
+        <Button
+            android:layout_weight="1"
+
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="月时基"
+            android:id="@+id/button"/>
+
+
+        <Button
+            android:textSize="15sp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="周时基"
+            android:id="@+id/button2"/>
+
+
+        <Button
+            android:textSize="15sp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="特殊时基"
+            android:id="@+id/button3"/>
+
+
+        <Button
+            android:textSize="15sp"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="时段"
+            android:id="@+id/button4"/>
+    </LinearLayout>
+</LinearLayout>

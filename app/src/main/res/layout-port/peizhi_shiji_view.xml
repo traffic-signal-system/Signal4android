@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rela_peizhi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="80dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/btn01"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="该时基编号还未配置"
+                android:id="@+id/textView5"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:background="@drawable/btn_shape_selector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="配置"
+                android:id="@+id/button_peizhi"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

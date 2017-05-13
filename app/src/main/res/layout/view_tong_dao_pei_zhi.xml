@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="通道号：1"
+        android:id="@+id/textViewTongDaoHaoXiangWei"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="相位类型：未知"
+        android:id="@+id/textViewTypeXiangWei"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="相位功能选项：未知"
+        android:id="@+id/textViewGongNengXiangWei"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="最小绿灯时间：1"
+        android:id="@+id/textViewMinGreenXiangWei"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="最大绿灯时间1：1"
+        android:id="@+id/textViewMaxGreenXiangWei1"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="最大绿灯时间2：1"
+        android:id="@+id/textViewMaxGreenXiangWei2"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="单位绿灯延长时间：1"
+        android:id="@+id/textViewDelayGreenXiangWei"/>
+
+    <TextView
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ooopic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="绿闪时间：1"
+        android:id="@+id/textViewShanGreenXiangWei"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多相位设置"
+            android:id="@+id/checkBoxIsMoreSet"/>
+
+        <TextView
+            android:paddingRight="15dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/ooopic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="请选择"
+            android:id="@+id/textViewCheckXiangWei"/>
+    </LinearLayout>
+
+    <Button
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_shape_selector"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="保存到信号机"
+        android:id="@+id/buttonSaveXiangWei"/>
+</LinearLayout>

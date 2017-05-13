@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              tools:context="com.aiton.zjb.signal.activity.PhaseActivity">
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/crossing_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"></include>
+    <TextView
+        android:layout_width="2.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/rg_control"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="手控与自控"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:textSize="@dimen/normal_textsize"
+                android:gravity="center"
+                android:id="@+id/rb_munual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="手动控制"/>
+
+            <TextView
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+            </TextView>
+
+            <RadioButton
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/rb_self"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/check_selector"
+                android:text="自主控制"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/white">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+                android:text="下一步"
+                />
+
+            <TextView
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnNextPhase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+
+                android:text="下相位"
+                />
+
+            <TextView
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnNextDirec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+                android:text="下方向"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnNorth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+                android:text="北"
+                />
+
+            <TextView
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnEast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+                android:text="东"
+                />
+
+            <TextView
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnSouth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+                android:text="南"
+                />
+
+            <TextView
+                android:layout_width="2.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <Button
+                android:textSize="@dimen/normal_textsize"
+                android:id="@+id/btnWest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_secector"
+                android:text="西"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

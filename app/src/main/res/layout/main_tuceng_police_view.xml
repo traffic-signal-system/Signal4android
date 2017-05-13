@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:id="@+id/textViewPoliceExit"
+            />
+
+        <TextView
+            android:background="@color/line_gray"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:id="@+id/textView102"/>
+
+        <TextView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="进入警卫路线"
+            android:id="@+id/textViewPoliceComfrim"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#23b7ff</color>
+    <color name="aiton_basic_color">#ff7d27</color>
+    <color name="btn01">#23b7ff</color>
+    <color name="btn02">#ffb342</color>
+    <color name="gridview_select_color">#ff1a1e</color>
+    <color name="gridview_unselect_color">#ff9237</color>
+    <color name="red">#FFFF0000</color>
+    <color name="exit">#e74646</color>
+    <color name="halfTranslucent">#99ffffff</color>
+</resources>

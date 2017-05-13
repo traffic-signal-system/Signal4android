@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入IP地址"
+        android:textColor="@color/black"
+        android:id="@+id/textView21"/>
+
+    <EditText
+        android:inputType="number"
+        android:digits="0123456789."
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextIP"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:padding="15dp"
+        android:layout_gravity="right"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:id="@+id/textViewComfirmIP"/>
+</LinearLayout>

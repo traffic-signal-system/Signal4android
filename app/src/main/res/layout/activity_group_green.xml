@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aiton.zjb.signal.activity.GroupGreenActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textSize="@dimen/titleTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配置群绿波"
+            android:id="@+id/textView80"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="完成"
+            android:id="@+id/textViewComfrim"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:paddingRight="20dp"
+            android:id="@+id/imageViewBack"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:id="@+id/textView90"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="群ID：1"
+                android:id="@+id/textViewGroupID"/>
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="群名称：艾通"
+                android:id="@+id/textViewGroupName"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="设置周期----->"
+                android:id="@+id/textView89"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:src="@mipmap/delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageViewDel"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:id="@+id/textViewCycle"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:src="@mipmap/add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageViewAdd"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@color/line_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:id="@+id/textView91"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="节点信息"
+            android:id="@+id/textView85"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="相位差"
+            android:id="@+id/textView87"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewGroupGreen"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

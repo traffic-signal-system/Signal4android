@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aiton.zjb.signal.activity.PoliceLineActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:layout_weight="1"
+                layout="@layout/crossing_view"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"></include>
+
+            <SurfaceView
+                android:layout_weight="1"
+                android:background="#0000ff00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Sur_Player"
+                />
+
+
+        </LinearLayout>
+
+        <com.aiton.administrator.shane_library.shane.widget.HorizontialListView
+            android:layout_weight="2"
+            android:id="@+id/HorizontialListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.aiton.administrator.shane_library.shane.widget.HorizontialListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/line_gray"
+        android:layout_width="@dimen/line_width"
+        android:layout_height="match_parent"
+        android:id="@+id/textView101"/>
+
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态：自动"
+                    android:id="@+id/textViewStatue"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="开启手动"
+                    android:id="@+id/textViewOpen"
+                    />
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.aiton.administrator.shane_library.shane.widget.UISwitchButton
+                        android:padding="10dp"
+                        android:id="@+id/swb_manul"
+                        android:checked="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true">
+
+                    </com.aiton.administrator.shane_library.shane.widget.UISwitchButton>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView86"/>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView88">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="北"
+                        android:id="@+id/buttonNorth"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView94"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView95">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="西"
+                        android:id="@+id/buttonWest"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView96"/>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView97">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="东"
+                        android:id="@+id/buttonEast"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView98"/>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView99">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="南"
+                        android:id="@+id/buttonSouth"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView100"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout16">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="下一步"
+                        android:id="@+id/buttonNextStep"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout17">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="下相位"
+                        android:id="@+id/buttonNextPhase"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout18">
+
+                    <Button
+                        android:textColor="@color/white"
+                        android:background="@drawable/comfrim_selector"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="下方向"
+                        android:id="@+id/buttonNextDrict"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

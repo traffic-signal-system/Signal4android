@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="节点ID：1"
+                android:id="@+id/textViewNodeID"/>
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="节点名称：艾通"
+                android:id="@+id/textViewNodeName"/>
+
+            <TextView
+                android:paddingLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="节点IP：19.168.1.1"
+                android:id="@+id/textViewNodeIP"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:src="@mipmap/delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageViewDel"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/textViewPhaseDiff"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:src="@mipmap/add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageViewAdd"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <com.aiton.administrator.shane_library.shane.widget.CircleImageView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:id="@+id/imageView_mine"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@mipmap/dgc_title_bar_menu_normal"
+            />
+
+
+        <ImageView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:id="@+id/imageSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_home_search_normal"/>
+
+        <EditText
+            android:textColorHint="@color/gray"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/normal_edittextsize"
+            android:hint="输入要查找的节点名称"
+            android:layout_margin="10dp"
+            android:background="@drawable/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextSearch"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_mine"
+            android:layout_toLeftOf="@+id/imageSearch"
+            />
+    </RelativeLayout>
+</LinearLayout>

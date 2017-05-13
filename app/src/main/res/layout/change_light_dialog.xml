@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/basic_color"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="北左"
+            android:textSize="16dp"
+            android:id="@+id/textViewZuo"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="北直"
+            android:textSize="16dp"
+            android:id="@+id/textViewZhi"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="北右"
+            android:textSize="16dp"
+            android:id="@+id/textViewYou"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="北特殊"
+            android:textSize="16dp"
+            android:id="@+id/textViewTeShu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/redone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewZuo"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/redone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewZhi"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/redone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewYou"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/redone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewTeShu"/>
+    </LinearLayout>
+
+    <Button
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_secector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="确认"
+        android:id="@+id/buttonConfrim"/>
+
+</LinearLayout>

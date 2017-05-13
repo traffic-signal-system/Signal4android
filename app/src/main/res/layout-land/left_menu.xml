@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/rela_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <com.aiton.administrator.shane_library.shane.widget.CircleImageView
+                android:id="@+id/imageView_touXiang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_avatar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_touXiang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="15871105320"
+                android:id="@+id/textView_phone_head"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="@dimen/line_width"
+        android:layout_height="match_parent"
+        android:background="@color/gray_white" />
+
+    <include layout="@layout/left_scrollview"></include>
+
+</LinearLayout>

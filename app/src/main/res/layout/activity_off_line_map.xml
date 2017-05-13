@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.aiton.zjb.signal.activity.OffLineMapActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textSize="@dimen/titleTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离线地图"
+            android:id="@+id/textView78"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:paddingRight="20dp"
+            android:id="@+id/imageViewBack"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:id="@+id/textView82"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="厦门市"
+            android:id="@+id/textViewXiaMen"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/linearLayout4">
+
+            <Button
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_secector"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="下载"
+                android:id="@+id/buttonStatue"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/linearLayout4"
+                android:layout_toStartOf="@+id/linearLayout4"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:src="@mipmap/dgp_title_bar_btn_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewDeleteXiamen"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未知"
+            android:id="@+id/textViewSize"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewXiaMen"
+            android:layout_toEndOf="@+id/textViewXiaMen"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
+
+    </RelativeLayout>
+
+    <com.aiton.administrator.shane_library.shane.widget.FlikerProgressBar
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:id="@+id/round_flikerbar"
+        app:textSize="12sp"
+        app:loadingColor="#40c4ff"
+        app:stopColor="#ff9800"
+        app:radius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"></com.aiton.administrator.shane_library.shane.widget.FlikerProgressBar>
+</LinearLayout>

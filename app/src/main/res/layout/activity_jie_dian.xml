@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NodeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Title_Hight"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:textSize="@dimen/titleTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="节点管理"
+                android:id="@+id/textView26"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="添加节点"
+                android:id="@+id/tvAddJieDian"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+            <ImageView
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:paddingRight="20dp"
+                android:id="@+id/imageViewBack"
+                android:paddingLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:paddingRight="15dp"
+                style="@style/checkTextStyle"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="域：所有"
+                android:id="@+id/textViewArea"/>
+
+            <TextView
+                android:paddingRight="15dp"
+                style="@style/checkTextStyle"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="群：所有"
+                android:id="@+id/textViewGroup"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="状态"
+                android:id="@+id/textView45"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="节点名称"
+                android:id="@+id/textView31"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="节点IP"
+                android:id="@+id/textView32"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="编辑"
+                    android:id="@+id/textView30"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="删除"
+                    android:id="@+id/textView49"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView_jieDian"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/list_right_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/right_view"></include>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

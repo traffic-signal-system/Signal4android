@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvJieDuanPeiShiHao"
+                style="@style/checkTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="阶段配时号：1"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvLuKouJiZhunTu"
+                style="@style/checkTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="路口基准图：1"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewGreen"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="绿：0"
+                android:textSize="@dimen/normal_textsize"/>
+
+            <ImageView
+                android:src="@mipmap/delete"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewGreenDelete"/>
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_weight="1"
+                android:id="@+id/seekBarGreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                app:dsb_indicatorColor="@color/green"
+                app:dsb_max="255"
+                app:dsb_min="0"
+                app:dsb_progressColor="@color/green"
+                app:dsb_rippleColor="@color/green"
+                />
+
+            <ImageView
+                android:src="@mipmap/add"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewGreenAdd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewYellow"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="黄：0"
+                android:textSize="@dimen/normal_textsize"/>
+
+            <ImageView
+                android:src="@mipmap/delete"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewYellowDelete"/>
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_weight="1"
+                android:id="@+id/seekBarYellow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                app:dsb_indicatorColor="#cccc1b"
+                app:dsb_max="255"
+                app:dsb_min="0"
+                app:dsb_progressColor="#cccc1b"
+                app:dsb_rippleColor="#cccc1b"
+                />
+
+            <ImageView
+                android:src="@mipmap/add"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewYellowAdd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewRed"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="红：0"
+                android:textSize="@dimen/normal_textsize"/>
+
+            <ImageView
+                android:src="@mipmap/delete"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewRedDelete"/>
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_weight="1"
+                android:id="@+id/seekBarRed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                app:dsb_indicatorColor="@color/red"
+                app:dsb_max="255"
+                app:dsb_min="0"
+                app:dsb_progressColor="@color/red"
+                app:dsb_rippleColor="@color/red"
+                />
+
+            <ImageView
+                android:src="@mipmap/add"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewRedAdd"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxGanYing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="感应无车阶段忽略"/>
+
+            <Button
+                android:id="@+id/buttonComfirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_secector"
+                android:gravity="center"
+                android:text="保存到信号机"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

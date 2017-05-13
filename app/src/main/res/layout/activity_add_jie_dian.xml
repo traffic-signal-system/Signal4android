@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddNodeActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textSize="@dimen/titleTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加节点"
+            android:id="@+id/textViewTitle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="完成"
+            android:id="@+id/textView_complete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:background="@drawable/layout_selector_white_system_gray"
+            android:paddingRight="20dp"
+            android:id="@+id/imageViewBack"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rela_manager"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@mipmap/ooopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管理人员："
+                    android:id="@+id/textView54"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_textsize"
+                    android:hint="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textViewManager"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView54"
+                    android:layout_toEndOf="@+id/textView54"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_GroupID"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群编号："
+                    android:id="@+id/textView38"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <ImageView
+                    android:src="@mipmap/ooopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView5"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_textsize"
+                    android:hint="请选择(群编号，群名称，域名称)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textViewGroupID"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView38"
+                    android:layout_toEndOf="@+id/textView38"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_sequence"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="群序列："
+                    android:id="@+id/textView39"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <ImageView
+                    android:src="@mipmap/ooopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_textsize"
+                    android:hint="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textView48"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView39"
+                    android:layout_toEndOf="@+id/textView39"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备名称:"
+                    android:id="@+id/textView40"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_edittextsize"
+                    android:hint="请输入设备名称"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextDeviceName"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView40"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备IP:"
+                    android:id="@+id/textView46"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_edittextsize"
+                    android:hint="请输入设备IP"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextdeviceIP"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView46"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="端口号:"
+                    android:id="@+id/textView47"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_edittextsize"
+                    android:hint="请输入端口号"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextPort"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView47"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="版本号:"
+                    android:id="@+id/textView42"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_edittextsize"
+                    android:hint="请输入版本号"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextVerson"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView42"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_linkType"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连接类型："
+                    android:id="@+id/textView44"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <ImageView
+                    android:src="@mipmap/ooopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView16"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_textsize"
+                    android:hint="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textView51"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView44"
+                    android:layout_toEndOf="@+id/textView44"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_chooseAdd"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经纬度："
+                    android:id="@+id/textView41"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+
+                <ImageView
+                    android:src="@mipmap/ooopic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp"/>
+
+                <TextView
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/normal_textsize"
+                    android:hint="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textViewLocation"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView41"
+                    android:layout_toEndOf="@+id/textView41"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout19"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layout_selector_white_system_gray"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="摄像头(可选)"
+                    android:id="@+id/textView4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+                <ImageView
+                    android:id="@+id/add_Video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_ticket_count_add_normal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="名称"
+                    android:id="@+id/textView10"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="IP"
+                    android:id="@+id/textView13"/>
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:id="@+id/textView34"/>
+
+            </LinearLayout>
+
+            <com.aiton.administrator.shane_library.shane.widget.ListView4ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewVideo"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

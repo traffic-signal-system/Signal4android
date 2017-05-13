@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_local"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.aiton.zjb.signal.activity.LocalActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:background="@color/aiton_basic_color"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="本地控制"
+                android:textSize="@dimen/titleTextSize"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:textSize="@dimen/normal_textsize"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="手动添加"
+                android:id="@+id/textViewAddIP"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_tsc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:numColumns="3"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_broadcast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/btn_guanli_selector"
+        android:text="广播"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/btn_textSize"/>
+</LinearLayout>
