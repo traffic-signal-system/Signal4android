@@ -362,7 +362,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="《服务标准及违约责任约定》"
+                android:text="《服务标准及违约责任约定》     内部系统测试请联系18106931022，配置帐号"
                 android:textColor="@color/aiton_basic_color"
                 android:textSize="@dimen/bottom_text_size"/>
 

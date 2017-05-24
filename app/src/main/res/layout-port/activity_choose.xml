@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_choose"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,52 +14,85 @@
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
-
-        <RelativeLayout
-            android:layout_weight="1"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
 
-            <Button
-                android:textSize="50dp"
-                android:textColor="@color/white"
-                android:background="@drawable/btn_guanli_selector"
-                android:gravity="center"
-                android:layout_centerInParent="true"
-                android:text="联网控制"
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/button_internet"/>
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
 
-            <Button
-                android:textSize="@dimen/normal_textsize"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:background="@drawable/btn_guangbo_secector"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="切换成横屏"
-                android:id="@+id/button_HengShuPing"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_weight="1"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="115dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
 
-            <Button
-                android:textSize="50dp"
-                android:textColor="@color/white"
-                android:background="@drawable/btn_guangbo_secector"
-                android:gravity="center"
-                android:layout_centerInParent="true"
-                android:text="本地控制"
+            <RelativeLayout
+                android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/button_local"/>
-        </RelativeLayout>
+                android:layout_height="115dp">
+
+                <Button
+                    android:textSize="50dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_guanli_selector"
+                    android:gravity="center"
+                    android:text="联网控制"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_internet"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+                <Button
+                    android:textSize="50dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_guangbo_secector"
+                    android:gravity="center"
+                    android:text="本地控制"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_local"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+
+                <Button
+                    android:textSize="@dimen/normal_textsize"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="切换成横屏"
+                    android:id="@+id/button_HengShuPing"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+          </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

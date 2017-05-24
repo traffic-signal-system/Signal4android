@@ -13,7 +13,25 @@
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+        android:layout_width="115dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
         <RelativeLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -47,18 +65,36 @@
                 android:layout_height="match_parent"
                 android:id="@+id/button_local"/>
 
+
+        </RelativeLayout>
+        </LinearLayout>
+<LinearLayout
+    android:layout_weight="1"
+
+    android:orientation="vertical"
+    android:layout_width="115dp"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
             <Button
-                android:textSize="@dimen/normal_textsize"
+                android:textSize="50dp"
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:background="@drawable/btn_guanli_selector"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:text="切换成竖屏"
                 android:id="@+id/button_HengShuPing"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"/>
         </RelativeLayout>
+</LinearLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -16,7 +16,7 @@ android {
                 GETUI_APP_SECRET : "y9Yd9xQg708TsHoVWWYhW5"
         ]
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+            abiFilters "armeabi", "armeabi-v7a", "x86_64","x86"
         }
     }
     buildTypes {
@@ -37,8 +37,11 @@ dependencies {
     compile files('libs/Msc.jar')
     compile files('libs/commons-lang3-3.3.jar')
     testCompile 'junit:junit:4.12'
+
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.youth.banner:banner:1.4.9'  //最新版本
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile files('libs/AMap3DMap_4.1.3_AMapNavi_1.9.4_AMapSearch_3.6.1_AMapLocation_3.2.0_20161208.jar')
     compile 'com.getui:sdk:2.+'
     compile files('libs/HCNetSDK.jar')

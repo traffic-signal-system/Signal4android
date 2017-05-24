@@ -100,7 +100,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/rela_message"
+                android:id="@+id/rela_setting"
                 android:background="@drawable/layout_selector_white_system_gray">
 
                 <ImageView
@@ -154,7 +154,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/rela_setting"
+                android:id="@+id/rela_more"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/layout_selector_white_system_gray">

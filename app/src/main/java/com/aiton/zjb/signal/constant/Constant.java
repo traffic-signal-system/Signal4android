@@ -7,10 +7,10 @@ import android.content.pm.ActivityInfo;
  */
 
 public class Constant {
-
-    public static String IP = "www.aiton.com.cn";
+//    public static String IP = "www.aiton.com.cn";
+    public static String IP = "192.168.1.119";
     public static int PORT= 18888;
-    public static final String HOST = "http://"+IP+"/aiton-maintain-app-webapp/";
+    public static final String HOST = "http://"+IP+":8080/aiton-maintain-app-webapp/";
     public static int HengShuPing = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 
     public static class Url {

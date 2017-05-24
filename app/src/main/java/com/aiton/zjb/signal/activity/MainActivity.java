@@ -213,7 +213,9 @@ public class MainActivity extends ZjbBaseActivity implements View.OnClickListene
         findViewById(R.id.imageSearch).setOnClickListener(this);
         findViewById(R.id.rela_groupManager).setOnClickListener(this);
         findViewById(R.id.rela_AreaManager).setOnClickListener(this);
+        findViewById(R.id.rela_setting).setOnClickListener(this);
         findViewById(R.id.rela_offLineMap).setOnClickListener(this);
+        findViewById(R.id.rela_more).setOnClickListener(this);
         mEditTextSearch.addTextChangedListener(new MyTextWatcher());
         mListViewSearch.setOnItemClickListener(new MySearchItemClickListener());
         findViewById(R.id.textViewGreenWave).setOnClickListener(this);
@@ -272,7 +274,7 @@ public class MainActivity extends ZjbBaseActivity implements View.OnClickListene
         // 设置为true表示显示定位层并可触发定位，false表示隐藏定位层并不可触发定位，默认是false
         AMap.setMyLocationEnabled(true);
         // 设置定位的类型为定位模式，有定位、跟随或地图根据面向方向旋转几种
-        AMap.setMyLocationType(AMap.LOCATION_TYPE_LOCATE);
+        AMap.setMyLocationType(com.amap.api.maps.AMap.LOCATION_TYPE_LOCATE);
         AMap.setInfoWindowAdapter(new AMap.InfoWindowAdapter() {
             @Override
             public View getInfoWindow(Marker marker) {
@@ -648,6 +650,14 @@ public class MainActivity extends ZjbBaseActivity implements View.OnClickListene
                 break;
             case R.id.textViewGreenWave:
                 intent.setClass(MainActivity.this, GroupActivity.class);
+                startActivityTo(intent);
+                break;
+            case R.id.rela_setting:
+                intent.setClass(MainActivity.this, OffLineMapActivity.class);
+                startActivityTo(intent);
+                break;
+            case R.id.rela_more:
+                intent.setClass(MainActivity.this, MoreActivity.class);
                 startActivityTo(intent);
                 break;
             case R.id.rela_offLineMap:
