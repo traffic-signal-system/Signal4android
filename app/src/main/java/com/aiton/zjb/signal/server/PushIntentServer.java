@@ -12,6 +12,7 @@ import com.aiton.zjb.signal.model.PushInfo;
 import com.aiton.zjb.signal.model.UserInfo;
 import com.igexin.sdk.GTIntentService;
 import com.igexin.sdk.message.GTCmdMessage;
+import com.igexin.sdk.message.GTNotificationMessage;
 import com.igexin.sdk.message.GTTransmitMessage;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -95,6 +96,16 @@ public class PushIntentServer extends GTIntentService {
     @Override
     public void onReceiveCommandResult(Context context, GTCmdMessage gtCmdMessage) {
         Log.e("PushIntentServer", "PushIntentServer--onReceiveCommandResult--"+gtCmdMessage.getAction());
+    }
+
+    @Override
+    public void onNotificationMessageArrived(Context context, GTNotificationMessage gtNotificationMessage) {
+
+    }
+
+    @Override
+    public void onNotificationMessageClicked(Context context, GTNotificationMessage gtNotificationMessage) {
+
     }
 
 
